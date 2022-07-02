@@ -1,0 +1,150 @@
+@import url(https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Satisfy&family=Special+Elite&display=swap);
+
+body {
+  background: rgb(57, 66, 75);
+  font-family: 'Merienda', cursive;
+  font-family: 'Satisfy', cursive;
+  font-family: 'Special Elite', cursive;
+  
+}
+
+.fill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../Images/crime-banner.jpg);
+}
+  
+  .topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #c72610;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 20px;
+  }
+  
+  .topnav a:hover {
+    color: aqua;
+  }
+  
+  .topnav a.active {
+  color: white;
+  }
+  
+.figcaption {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  align-self: center;
+  font-size: 50px;
+}
+
+.flexbox {
+    min-height: 100vh;
+    display: flex;
+    gap: 10px;
+    background-color: rgb(233, 227, 227);
+    padding: 5px;
+  }
+
+  .img:hover {
+    opacity: 0.5;
+  }
+  
+  #header {
+    height: 200px;
+  }
+  
+  #sidebar {
+    text-align: center;
+  }
+  
+  #content-left {  
+    text-align: center;
+    color:crimson;
+  }
+  
+  #content-right {
+    text-align: center;
+    color:darkred
+  }
+
+  #footer {
+   justify-content: center;;
+  }
+  
+  .card {
+    width: 45%;
+    height: 50%;
+    align-items: center;
+    box-shadow: 4px 6px 6px 6px rgba(194, 16, 16, 0.2);
+    margin: auto;
+    border: 1px solid black;
+  }
+    
+  
+  /* Tablet */
+  /* Portrait and Landscape */
+  @media (min-width: 761px) and (max-width: 1024px) {
+    .grid-container {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas:
+        'hd hd hd hd'
+        'sb sb sb sb'
+        'lc lc rc rc'
+        'ft ft ft ft';
+    }
+    #sidebar {
+      min-height: 125px;
+    }
+    .flex-container .box {
+      flex-basis: 49%;
+    }
+  }
+  /* Phone */
+  /* Portrait and Landscape */
+  @media (max-width: 760px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        'hd hd'
+        'sb sb'
+        'lc lc'
+        'rc rc'
+        'ft ft';
+    }
+  }
+  
+  .navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .navbar a {
+    float: right;
+    display: block;
+    color: #c72610;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    color: aqua;
+  }
+  
+  .navbar a.active {
+    background-color: #333D;
+    color: white;
+  } 
